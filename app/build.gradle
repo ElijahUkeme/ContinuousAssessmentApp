@@ -1,0 +1,55 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services'
+    id 'androidx.navigation.safeargs'
+}
+
+android {
+    configurations {
+//        implementation.exclude module:'protobuf-java'
+//        implementation.exclude module:'protolite-well-known-types'
+//        implementation.exclude module:'protobuf-javalite'
+    }
+    namespace 'com.elijahukeme.assessmentapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.elijahukeme.assessmentapp"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.firebase.auth
+    implementation libs.firebase.database
+    implementation libs.firebase.firestore
+    implementation libs.firebase.storage
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation libs.circleimageview
+    implementation libs.androidx.navigation.fragment
+    implementation libs.picasso
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.test.ext.junit
+    androidTestImplementation libs.espresso.core
+}

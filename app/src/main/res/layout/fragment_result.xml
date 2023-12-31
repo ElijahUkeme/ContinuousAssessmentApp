@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".views.ResultFragment">
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="Result"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exit_button"
+        android:layout_below="@+id/result_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Exit"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:background="@drawable/quiz_button"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

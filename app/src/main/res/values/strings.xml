@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Assessment App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Test</string>
+    <string name="quiz_instruction">Please be sure of your answer before clicking on the next button when you start your test because once you move to the next question, you cannot return back to the previous one. If you have any question about this, you can contact the course lecturer for more clarification!\nGood Luck</string>
+</resources>

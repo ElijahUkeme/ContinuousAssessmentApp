@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".views.AddRegNumberFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar_admin_add_regNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/grey_10"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/admin_add_regNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_above="@id/add_regNumber_button"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_centerInParent="true"
+        android:hint="Enter the Registration Number"
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"
+        android:textColorHint="@color/teal_700"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_regNumber_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/teal_700"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
